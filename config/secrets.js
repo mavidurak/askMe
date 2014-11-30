@@ -1,5 +1,5 @@
 module.exports = {
-  db: process.env.MONGOLAB_URI || process.env.MONGODB || 'mongodb://localhost:27017/sabis',
+  db: process.env.MONGOLAB_URI || process.env.MONGODB || 'mongodb://10.7.81.41/sabis',
   sessionSecret: process.env.SESSION_SECRET || 'kivircikSaclarinaAkDusmusGormelof',
   twitter: {
     consumerKey: process.env.TWITTER_KEY || '6NNBDyJ2TavL407A3lWxPFKBI',
