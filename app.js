@@ -27,13 +27,15 @@ mongoose.connection.on('error', function() {
 */
 var routes = require('./routes/index');
 var users = require('./routes/users');
+var expressLayouts = require('express-ejs-layouts');
 
 // express uygulaması
 var app = express();
 
-// template motoru konfigrasyonu
+// view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
+app.set('layout', 'layout');
 
 // uygulama konfgirasyonları
 app.use(logger('dev'));
@@ -41,6 +43,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(expressLayouts);
 
 // url lerin route'lara yönlendirilmesis
 app.use('/', routes);
@@ -67,8 +70,15 @@ if (app.get('env') === 'development') {
     });
 }
 
-// uygulama ayağa kalktığında localhost:90 üzeirnden yayında olacak
-app.listen(90);
+// production error handler
+// no stacktraces leaked to user
+app.use(function(err, req, res, next) {
+    res.status(err.status || 500);
+    res.render('error', {
+        message: err.message,
+        error: {}
+    });
+});
 
-// uygulamanın export edilmesi
+app.listen(3001, 'localhost');
 module.exports = app;
