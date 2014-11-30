@@ -14,15 +14,12 @@ router.get('/signup', function(req, res) {
   res.render('signup');
 });
 
-<<<<<<< HEAD
 router.get('/add_question', function(req, res) {
   res.render('add_question');
 });
 
-=======
 router.get('/question/detail/:id', function(req, res) {
   res.render('question/list');
 });
->>>>>>> e840b1638f004978260663f3b836fd3abfa8c05b
 
 module.exports = router;
