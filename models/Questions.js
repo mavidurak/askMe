@@ -5,8 +5,6 @@ var QuestionsShema = new mongoose.Schema({
 	description:String,
 	askedBy: { type: ObjectId, ref: 'UserSchema' },
 	askedAt:Date,
-	tags: [],
-	votes: [],
 	lastUpdated:Date
 });
 
