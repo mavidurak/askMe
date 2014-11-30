@@ -1,13 +1,12 @@
 var mongoose = require('mongoose');
 
-var AnswerSchema = new Schema({
-    question :  { type: ObjectId, ref: 'QuestionSchema' },
+var Answer = new Schema({
+    question :  { type: ObjectId, ref: 'Question' },
     text: String,
-    createdBy : { type: ObjectId, ref: 'UserSchema' },
+    createdBy : { type: ObjectId, ref: 'User' },
     createdAt : Date,
-    votes: [],
     comments: [{
-        createdBy: { type: ObjectId, ref: 'UserSchema' },
+        createdBy: { type: ObjectId, ref: 'User' },
         createdAt: Date,
         text: String,
     }}
