@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 
-var QuestionsShema = new mongoose.Schema({
+var Question = new mongoose.Schema({
 	header:String,
 	description:String,
 	askedBy: { type: ObjectId, ref: 'User' },
@@ -8,4 +8,4 @@ var QuestionsShema = new mongoose.Schema({
 	lastUpdated:Date
 });
 
-exports.Questions = Questions;
+exports.Question = Question;
