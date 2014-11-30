@@ -3,8 +3,9 @@ var path = require('path');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var app = express();
+var configs = require('./configs');
 
-mongoose.connect("mongodb://localhost:27017/appDB");
+mongoose.connect(configs.db);
 
 var mainRouter = require('./routes/index');
 
@@ -16,4 +17,5 @@ app.post('/signup', function(req, res) {
     mainRouter.register(req.body.user);
 });
 
-app.listen(90);
+app.listen(configs.port);
+console.log("Acildi");
