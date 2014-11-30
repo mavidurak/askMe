@@ -3,7 +3,7 @@ var mongoose = require('mongoose');
 var QuestionsShema = new mongoose.Schema({
 	header:String,
 	description:String,
-	askedBy: { type: ObjectId, ref: 'UserSchema' },
+	askedBy: { type: ObjectId, ref: 'User' },
 	askedAt:Date,
 	lastUpdated:Date
 });
