@@ -14,5 +14,8 @@ router.get('/signup', function(req, res) {
   res.render('signup');
 });
 
+router.get('/question/detail/:id', function(req, res) {
+  res.render('question/list');
+});
 
 module.exports = router;
