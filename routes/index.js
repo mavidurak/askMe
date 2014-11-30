@@ -14,5 +14,9 @@ router.get('/signup', function(req, res) {
   res.render('signup');
 });
 
+router.get('/add_question', function(req, res) {
+  res.render('add_question');
+});
+
 
 module.exports = router;
