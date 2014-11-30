@@ -1,10 +1,9 @@
-var express = require('express');
-var router = express.Router();
+
 var mongoose = require('mongoose');
 var User = require('../models/User');
 
 
-exports.register = function(body) {
+exports.register = function(req, res) {
     
     var userModel = mongoose.model('User',User);
     var userObject = new User();
@@ -12,15 +11,10 @@ exports.register = function(body) {
     User.count({username:req.body.username}, function(err, count) {
         if(count > 0) console.log("kullanılıyor");
         else {
-            User.username = body.username;
-            User.password = body.password;
+            User.username = req.body.username;
+            User.password = req.body.password;
             User.save(function(err){});
         }
     });
-    
-   
+
 }
-
-
-
-module.exports = router;
