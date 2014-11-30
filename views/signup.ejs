@@ -1,0 +1,45 @@
+<%- contentFor('body') %>
+<div class="row">
+    <div class="col-md-6 col-md-offset-3">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <i class="fa fa-edit"></i> Kayıt Ol
+            </div>
+            <div class="panel-body">
+                <form class="form-horizontal" role="form" action="/signup" method="post">
+                    <div class="form-group">
+                        <label for="name" class="col-md-3 control-label">Ad Soyad</label>
+                        <div class="col-md-9">
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Ad Soyad">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="col-md-3 control-label">E-posta</label>
+                        <div class="col-md-9">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="E-posta">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="password" class="col-md-3 control-label">Parola</label>
+                        <div class="col-md-9">
+                            <input type="password" class="form-control" id="password" name="password" placeholder="Parola">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="passwrod_retry" class="col-md-3 control-label">Parola (Tekrar)</label>
+                        <div class="col-md-9">
+                            <input type="password" class="form-control" id="passwrod_retry" placeholder="Parola (Tekrar)">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-offset-3 col-md-9">
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fa fa-save"></i> Kayıt Ol
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

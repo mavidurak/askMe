@@ -1,0 +1,22 @@
+{
+  "name": "AskMe",
+  "version": "0.0.0",
+  "homepage": "https://github.com/mavidurak/askMe",
+  "authors": [
+    "Onur Altunsoy <onuraltunsoy28@gmail.com>"
+  ],
+  "description": "Mavidurak-IO Atölye Uygulaması",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "bootstrap": "~3.3.1",
+    "font-awesome": "~4.2.0"
+  }
+}
