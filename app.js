@@ -13,9 +13,12 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, 'public')));
 
+<<<<<<< HEAD
 app.post('/signup', function(req, res) {
     mainRouter.register(req.body.user);
 });
 
+=======
+>>>>>>> FETCH_HEAD
 app.listen(configs.port);
 console.log("Acildi");
