@@ -1,16 +1,4 @@
 {
-
-  "name": "askMe",
-  "version": "0.0.0",
-  "private": true,
-  "scripts": {
-    "start": "node app"
-  },
-  "dependencies": {
-    "express": "~4.9.0",
-    "body-parser": "~1.8.1",
-
-
 	"name": "askMe",
 	"version": "0.0.0",
 	"private": true,
@@ -20,5 +8,4 @@
 		"mongoose":"3.8.19",
 		"debug": "~2.0.0"
 	}
-
 }
