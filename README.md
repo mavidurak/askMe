@@ -92,9 +92,6 @@ Belirli bir klasör yapısı üzerinde çalışmak işlerimizi organize etmek a�
  * models (Veritabanı modelleri)
  * routes (Rota tanımlamaları)
  * views (Görünüm dosyaları)
-   * question
-   * auth
-   * answer
 * bower_components (Front-End komponentleri)
 * core (App.js parçaları)
 * node_modules
