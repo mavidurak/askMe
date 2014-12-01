@@ -87,15 +87,18 @@ Rota tanımlamaları yapılacak ve **app.js** içerisinden entegre edilecektir. 
 
 Belirli bir klasör yapısı üzerinde çalışmak işlerimizi organize etmek açısından yararlı olacaktır. Bu nedenle aşağıdaki klasör yapısının dışına çıkılmayacaktır. 
 
-* bower_components: (Front-End komponentleri)
-* config: (Yapılandırma dosyaları)
-* models: (Veritabanı modelleri)
-* public: (Asset dizini)
-* routes: (Rota tanımlamaları)
-* views: (Görünüm dosyaları)
-  * question: (Sorularla ilgili görünümler)
-  * answer: (Cevaplarla ilgili görünümler)
-  * auth: (Login ve Signup işlemleri ile ilgili görünümler)
+* app 
+ * config (Yapılandırma dosyaları)
+	* models (Veritabanı modelleri)
+	* routes (Rota tanımlamaları)
+	* views (Görünüm dosyaları)
+		* question
+		* auth
+		* answer
+* bower_components (Front-End komponentleri)
+* core (App.js parçaları)
+* node_modules
+* public (Asset dizini)
 
 #### <i class="icon-refresh"></i> Görünümler
 
