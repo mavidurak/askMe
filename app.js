@@ -25,6 +25,6 @@ app.get('/', function(req, res){
     res.render('index');
 });
 
-app.listen(101);
+app.listen(configs.port);
 
 module.exports = app;
