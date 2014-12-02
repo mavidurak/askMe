@@ -22,7 +22,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(expressLayouts);
 
 app.get('/', function(req, res){
-    res.render('index');
+    res.render('index',{title:'Main Page - askMe'});
 });
 
 app.listen(configs.port);
